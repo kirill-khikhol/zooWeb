@@ -11,19 +11,44 @@
 </head>
 
 <body>
-    <h1>Зоопсихология!!!</h1>
-    <h2>megaAnketa</h2>
-    <table id="table">
-        <tr>
-            <th>question</th>
-            <th>radio answer</th>
-            <th>check answer</th>
-            <th>full answer</th>
-        </tr>
-    </table>
-    <button>Save</button>
-    <p id="demo"> check</p>
-    <p id="demo2"> check</p>
+    <div class="header">
+        <h1>ZooPsi</h1>
+        <p>A website created by me.</p>
+    </div>
+    <div class="navbar" id="navbar">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#" class="right">Link</a>
+    </div>
+    <div class="row">
+        <!-- <div class="side"></div> -->
+        <div class="main">
+            <h2>megaAnketa</h2>
+            <div class="containerForTable" id="containerForTable">
+                <div id="containerForButtons"></div>
+                <div class="questionField" id="questionField"></div>
+                <table id="answerTable">
+                    <tr id="answersRow">
+
+                    </tr>
+                </table>
+                <div class="btn-group" style="width:100%">
+                    <button class="btn1" id="confirm">Confirm</button>
+                    <button class="btn1" onclick="nextQuestion()">Next</button>
+                    <button class="btn1">Skip</button>
+                </div>
+            </div>
+            <button>Save</button>
+            <p id="demo"> check</p>
+            <p id="demo2"> check</p>
+        </div>
+    </div>
+    <div id="chechAnswers"></div>
+
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
     <script src="Scripts/index.js"></script>
 </body>
 
